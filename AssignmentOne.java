@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+//执行部分
 public class AssignmentOne {
     public static void main(String[] args) {
         // 创建全科医生和专科医生对象
