@@ -20,4 +20,8 @@ public class GeneralPractitioner extends HealthProfessional {
         super.displayInfo();
         System.out.println("Clinic Name: " + clinicName);
     }
+
+    public String getClinicName() {
+        return clinicName;
+    }
 }

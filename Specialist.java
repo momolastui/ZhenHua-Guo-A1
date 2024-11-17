@@ -1,5 +1,5 @@
 public class Specialist extends HealthProfessional {
-    private String specialtyArea;  // 专科医生的专攻领域
+    private final String specialtyArea;  // 专科医生的专攻领域
 
     // 默认构造函数
     public Specialist() {
@@ -7,10 +7,15 @@ public class Specialist extends HealthProfessional {
         this.specialtyArea = "Unknown Specialty";
     }
 
-    // 带参数构造函数，初始化所有实例变量
+    // 带参数构造函数
     public Specialist(int id, String name, String specialtyArea) {
         super(id, name, "Specialist");
         this.specialtyArea = specialtyArea;
+    }
+
+    // 获取专攻领域
+    public String getSpecialtyArea() {
+        return specialtyArea;
     }
 
     // 打印专科医生的信息
@@ -21,4 +26,3 @@ public class Specialist extends HealthProfessional {
         System.out.println("Specialty Area: " + specialtyArea);
     }
 }
-

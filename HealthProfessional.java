@@ -1,7 +1,7 @@
 public class HealthProfessional {
-    private int id;            // 医生编码
-    private String name;       // 医生姓名
-    private String specialty;  // 医生专业领域
+    private final int id;            // 医生编码
+    private final String name;       // 医生姓名
+    private final String specialty;  // 医生专业领域
 
     // 默认构造函数
     public HealthProfessional() {
@@ -37,3 +37,4 @@ public class HealthProfessional {
         System.out.println("ID: " + id + ", Name: " + name + ", Specialty: " + specialty);
     }
 }
+

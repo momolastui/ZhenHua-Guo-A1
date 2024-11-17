@@ -1,8 +1,8 @@
 public class Appointment {
-    private String patientName;
-    private String patientMobile;
-    private String preferredTimeSlot;
-    private HealthProfessional doctor;
+    private final String patientName;         // 病人姓名
+    private final String patientMobile;       // 病人手机号
+    private final String preferredTimeSlot;   // 预约时间
+    private final HealthProfessional doctor;  // 医生对象
 
     // 默认构造函数
     public Appointment() {
@@ -20,6 +20,11 @@ public class Appointment {
         this.doctor = doctor;
     }
 
+    // 获取病人手机号
+    public String getPatientMobile() {
+        return patientMobile;
+    }
+
     // 打印预约详情
     public void printAppointmentInfo() {
         if (doctor != null) {
@@ -27,10 +32,10 @@ public class Appointment {
             System.out.println("Patient Mobile: " + patientMobile);
             System.out.println("Preferred Time Slot: " + preferredTimeSlot);
             System.out.println("Doctor: " + doctor.getName() + " (" + doctor.getSpecialty() + ")");
+        } else {
+            System.out.println("Doctor not assigned for this appointment.");
         }
     }
-
-    public String getPatientMobile() {
-        return patientMobile;
-    }
 }
+
+
