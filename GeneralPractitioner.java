@@ -1,5 +1,5 @@
 public class GeneralPractitioner extends HealthProfessional {
-    private String clinicName;  // 全科医生的诊所名称
+    private final String clinicName;  // 全科医生的诊所名称
 
     // 默认构造函数
     public GeneralPractitioner() {
@@ -7,10 +7,15 @@ public class GeneralPractitioner extends HealthProfessional {
         this.clinicName = "Unknown Clinic";
     }
 
-    // 带参数构造函数，初始化所有实例变量
+    // 带参数构造函数
     public GeneralPractitioner(int id, String name, String clinicName) {
         super(id, name, "General Practitioner");
         this.clinicName = clinicName;
+    }
+
+    // 获取诊所名称
+    public String getClinicName() {
+        return clinicName;
     }
 
     // 打印全科医生的信息
@@ -19,9 +24,5 @@ public class GeneralPractitioner extends HealthProfessional {
         System.out.println("Health Professional Type: General Practitioner");
         super.displayInfo();
         System.out.println("Clinic Name: " + clinicName);
-    }
-
-    public String getClinicName() {
-        return clinicName;
     }
 }
