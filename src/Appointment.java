@@ -1,3 +1,4 @@
+
 public class Appointment {
     private final String patientName;         // 病人姓名
     private final String patientMobile;       // 病人手机号

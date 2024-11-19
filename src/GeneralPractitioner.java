@@ -1,3 +1,4 @@
+
 public class GeneralPractitioner extends HealthProfessional {
     private final String clinicName;  // 全科医生的诊所名称
 

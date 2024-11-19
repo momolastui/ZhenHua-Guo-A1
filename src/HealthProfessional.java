@@ -1,3 +1,4 @@
+
 public class HealthProfessional {
     private final int id;            // 医生编码
     private final String name;       // 医生姓名
