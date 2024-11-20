@@ -1,41 +1,41 @@
-
 public class HealthProfessional {
-    private final int id;            // 医生编码
-    private final String name;       // 医生姓名
-    private final String specialty;  // 医生专业领域
+    private final int id;            // Doctor's ID
+    private final String name;       // Doctor's name
+    private final String specialty;  // Doctor's specialty
 
-    // 默认构造函数
+    // Default constructor
     public HealthProfessional() {
         this.id = 0;
         this.name = "Unknown";
         this.specialty = "General";
     }
 
-    // 带参构造函数，初始化所有实例变量
+    // Constructor with parameters to initialize all instance variables
     public HealthProfessional(int id, String name, String specialty) {
         this.id = id;
         this.name = name;
         this.specialty = specialty;
     }
 
-    // 获取医生编码
+    // Get the doctor's ID
     public int getId() {
         return id;
     }
 
-    // 获取医生姓名
+    // Get the doctor's name
     public String getName() {
         return name;
     }
 
-    // 获取医生专业
+    // Get the doctor's specialty
     public String getSpecialty() {
         return specialty;
     }
 
-    // 打印医生的信息
+    // Display doctor's information
     public void displayInfo() {
         System.out.println("ID: " + id + ", Name: " + name + ", Specialty: " + specialty);
     }
 }
+
 

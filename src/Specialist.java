@@ -1,24 +1,24 @@
 public class Specialist extends HealthProfessional {
-    private final String specialtyArea;  // 专科医生的专攻领域
+    private final String specialtyArea;  // Specialist's area of expertise
 
-    // 默认构造函数
+    // Default constructor
     public Specialist() {
         super(0, "Unknown", "Specialist");
         this.specialtyArea = "Unknown Specialty";
     }
 
-    // 带参数构造函数
+    // Constructor with parameters
     public Specialist(int id, String name, String specialtyArea) {
         super(id, name, "Specialist");
         this.specialtyArea = specialtyArea;
     }
 
-    // 获取专攻领域
+    // Get the specialty area
     public String getSpecialtyArea() {
         return specialtyArea;
     }
 
-    // 打印专科医生的信息
+    // Display information about the specialist
     @Override
     public void displayInfo() {
         System.out.println("Health Professional Type: Specialist");

@@ -1,11 +1,10 @@
-
 public class Appointment {
-    private final String patientName;         // 病人姓名
-    private final String patientMobile;       // 病人手机号
-    private final String preferredTimeSlot;   // 预约时间
-    private final HealthProfessional doctor;  // 医生对象
+    private final String patientName;         // Patient's name
+    private final String patientMobile;       // Patient's mobile number
+    private final String preferredTimeSlot;   // Preferred appointment time
+    private final HealthProfessional doctor;  // Doctor object
 
-    // 默认构造函数
+    // Default constructor
     public Appointment() {
         this.patientName = "Unknown";
         this.patientMobile = "Unknown";
@@ -13,7 +12,7 @@ public class Appointment {
         this.doctor = null;
     }
 
-    // 带参构造函数
+    // Constructor with parameters
     public Appointment(String patientName, String patientMobile, String preferredTimeSlot, HealthProfessional doctor) {
         this.patientName = patientName;
         this.patientMobile = patientMobile;
@@ -21,12 +20,12 @@ public class Appointment {
         this.doctor = doctor;
     }
 
-    // 获取病人手机号
+    // Get patient's mobile number
     public String getPatientMobile() {
         return patientMobile;
     }
 
-    // 打印预约详情
+    // Print appointment details
     public void printAppointmentInfo() {
         if (doctor != null) {
             System.out.println("Patient Name: " + patientName);
@@ -38,5 +37,6 @@ public class Appointment {
         }
     }
 }
+
 
 
